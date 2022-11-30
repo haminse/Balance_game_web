@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title> 밸런스 게임 </title>
+  </head>
+  <body>
+    <button class = 'Home'>Home</button>
+    <h1> Welcome to Balance Game </h1>
+
+        <div class = "menu" >
+          <p style="text-align:center">  Choose your category </p>
+        
+          
+          <button id = 'food_btn' class="button-01" role="button"> 음식 밸런스 </button> <br> <br>
+          <button id = 'date_btn' class="button-02" role="button"> 연애 밸런스 </button> <br> <br>
+          <button id = 'drama_btn' class="button-03" role="button"> 드라마 밸런스 </button>
+        </div>
+
+        <section class = 'sub food'>
+          <h2>음식 밸런스 1.</h2>
+          <div class = 'select'>
+            <button class = 'A' onclick="next();" value = '0'>순살치킨</button>
+            <button class = 'VS'></button>
+            <button class = 'B' onclick="next();" value = '0'>뼈치킨</button>
+          </div>
+        </section>
+
+        <section class = 'sub date'>
+          <h2>연애 밸런스 2.</h2>
+          <div class = 'select'>
+            <button class = 'A' onclick="next2();"> EX의 친구와 사귀기</button>
+            <button class = 'VS'></button>
+            <button class = 'B' onclick="next2();"> 친구의 EX와 사귀기</button>
+          </div>
+        </section>
+
+        <section class = 'sub drama'>
+          <h2>드라마 밸런스 3.</h2>
+          <p class = 'desc_drama'>
+            설명설명
+          </p>
+          <div class = 'select'>
+            <button class = 'A'> 블라블라</button>
+            <button class = 'VS'></button>
+            <button class = 'B'> 블라블라</button>
+          </div>
+        </section>
+
+        <section class = 'result'>
+          <h1 id = 'rst'> -THE END- </h1>
+        </section>
+
+
+      <script src = 'main.js'></script>
+  </body>
+</html>
+
+
+
+
